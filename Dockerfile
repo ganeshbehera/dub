@@ -1,5 +1,6 @@
-# Use an official Node runtime as the base image
-FROM node:14-alpine
+# Use a newer official Node runtime as a parent image
+# Make sure to use a version of the Node image that includes Node.js v16.14 or higher
+FROM node:16-alpine
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
